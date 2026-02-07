@@ -1,0 +1,9 @@
+string = input("Enter the main string: ")
+substring = input("Enter the substring: ")
+count = 0
+index = 0
+while index <= len(string) - len(substring):
+    if string[index:index + len(substring)] == substring:
+        count += 1
+    index += 1
+print(count)

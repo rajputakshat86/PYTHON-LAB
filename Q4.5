@@ -1,0 +1,9 @@
+s = input("Enter a string: ")
+s = s.upper()
+counted = []
+
+for ch in s:
+    if ch.isalpha() and ch not in counted:
+        freq = s.count(ch)
+        print(f"{freq}{ch}")
+        counted.append(ch)
